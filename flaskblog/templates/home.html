@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div class="bg mt-5">
+    <div class="bg-product mt-5">
+        <div class="container product">
+            <div class="row">
+                <div id="sliderproduct" class="carousel slide " data-ride="carousel" data-interval="10000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#sliderproduct" data-slide-to="0" class="active"></li>
+                        <li data-target="#sliderproduct" data-slide-to="1"></li>
+                        <li data-target="#sliderproduct" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox" data-interval="10000000">
+
+                        <div class="carousel-item active">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-sm-6 image">
+                                        <div class="item">
+
+                                            <img class="img-fluid"
+                                                src="{{ url_for('static', filename='uploads/' + posts[1].image_file) }}">
+                                        </div>
+                                        <!--enditem-->
+                                    </div>
+                                    <!--endcol-->
+                                    <div class="col-sm-6">
+                                        <div class="top d-flex justify-content-center">
+
+                                            <a class="post-meta" href="#"> {{ posts[1].author.username }}</a>
+
+                                        </div>
+                                        <!--endtop-->
+                                        <div class="details mt-3">
+
+                                            <h2><a class="article-title"
+                                                    href="{{ url_for('post', post_id=posts[1].id) }}">{{ posts[1].title
+                                                    }}</a>
+                                            </h2>
+                                            <p class="cr4">{{ posts[1].content|truncate(25, True, '...') }} </p>
+
+                                            <div class="rating">
+                                                <!-- <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> -->
+                                            </div>
+                                            <!--endrating-->
+                                            <p class="text-muted">{{ posts[1].date_posted.strftime('%Y-%m-%d')
+                                                }}</p>
+
+                                            <a href="{{ url_for('post', post_id=posts[1].id) }}"
+                                                class="btn btn-food">Read
+                                                More</a>
+                                        </div>
+                                        <!--enddetails-->
+                                    </div>
+                                    <!--endcol-->
+                                </div>
+                                <!--endrow-->
+                            </div>
+                            <!--endcontainer-->
+                        </div>
+
+                        <!--endcarousel-item-->
+                        {% for post in posts[2:7] %}
+                        <div class="carousel-item">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-sm-6 image">
+                                        <div class="item">
+
+                                            <img class="img d-flex align-items-end justify-content-center home_img"
+                                                src="{{ url_for('static', filename='uploads/' + post.image_file) }}">
+
+                                            <!-- <img src="{{ image_file }}" alt="" class="img_fliud"> -->
+                                        </div>
+                                        <!--enditem-->
+                                    </div>
+                                    <!--endcol-->
+                                    <div class="col-sm-6">
+                                        <div class="top d-flex justify-content-center">
+
+                                            <a class="post-meta" href="#"> {{ post.author.username
+                                                }}</a>
+
+                                        </div>
+                                        <!--endtop-->
+                                        <div class="details">
+
+                                            <h2><a class="article-title"
+                                                    href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a>
+                                            </h2>
+                                            <p class="cr4">{{ post.content|truncate(50, True, '...') }} </p>
+
+                                            <div class="rating">
+                                                <!-- <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> -->
+                                            </div>
+                                            <!--endrating-->
+                                            <p class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d')
+                                                }}</p>
+
+                                            <a href="{{ url_for('post', post_id=post.id) }}" class="btn btn-food">Read
+                                                More</a>
+                                        </div>
+                                        <!--enddetails-->
+                                    </div>
+                                    <!--endcol-->
+                                </div>
+                                <!--endrow-->
+                            </div>
+                            <!--endcontainer-->
+                        </div>
+                        {% endfor %}
+                        <!--endcarousel-item-->
+                        <a class="carousel-control-prev fa fa-angle-left" href="#sliderproduct" role="button"
+                            data-slide="prev">
+                        </a>
+                        <a class="carousel-control-next fa fa-angle-right" href="#sliderproduct" role="button"
+                            data-slide="next">
+                        </a>
+                    </div>
+                    <!--endslidesliderproduct-->
+                </div>
+                <!--endrow-->
+            </div>
+            <!--endcontainer-->
+        </div>
+        <!--endbg-product-->
+    </div>
+</div>
+{% endblock content %}

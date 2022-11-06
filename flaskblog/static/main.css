@@ -1,0 +1,414 @@
+body {
+  background: white;
+  color: #333333;
+  margin-top: 5rem;
+}
+a {
+  color: var(--color-links);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-links-hover);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+p {
+  font-family: var(--font-default);
+}
+.bg-steel {
+  background-color: #f2f2f2;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  font-family: var(--font-primary);
+}
+.site-header .navbar-nav .nav-link {
+  color: var(--color-primary);
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  /* white-space: pre-line; */
+  line-height: 2;
+  width: 90%;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.post-meta {
+  font-size: 11px;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  color: rgba(var(--color-black-rgb), 0.4);
+  margin-bottom: 10px;
+}
+
+.page-title {
+  font-size: 70px;
+  color: var(--color-black);
+}
+
+.post-entry-1 h2 a {
+  color: var(--color-black);
+  font-size: 15px;
+}
+
+.post-entry-1.lg h2 {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.aside-block {
+  margin-bottom: 30px;
+}
+
+.aside-block .custom-tab-nav .nav-item {
+  display: inline-block;
+}
+
+.aside-block .custom-tab-nav .nav-item button {
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 20px;
+}
+
+.aside-block .custom-tab-nav .nav-item button.active {
+  background-color: var(--color-black) !important;
+  background-color: transparent !important;
+  color: var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+}
+
+/***************************************************************************
+  CONTACT
+  ***************************************************************************/
+.contact form {
+  margin-top: 0px;
+  padding: 0px 30px;
+}
+.contact h3 {
+  color: #212529;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 60px;
+}
+
+.contact p {
+  margin: 0 0px 10px;
+  margin-left: 0px !important;
+}
+.contact label {
+  display: none;
+}
+.contact input {
+  width: 100%;
+  border: none;
+  border: 1px solid #dddddd78;
+  padding: 10px;
+  border-radius: 4px;
+}
+.contact textarea#message {
+  width: 100%;
+  height: 122px;
+  border: 1px solid #dddddd78;
+  border-radius: 4px;
+  padding: 10px;
+}
+.contact input#submit {
+  color: white;
+  background: black;
+  /* background: linear-gradient(0.25turn, #2a78ca, #71a1d4); */
+  float: right;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 23px;
+  /* margin-right: 10px; */
+  box-shadow: 0px 0px 4px 0px #00000087;
+  margin-top: 15px;
+}
+
+.img_fluid {
+  max-width: 100%;
+  height: auto;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.home_img {
+  max-width: 100%;
+  height: 358px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/***************************************************************************
+                                END CONTACT
+***************************************************************************/
+
+/* HOME PAGE */
+:root {
+  /* --cr1: #f36e45; */
+  --cr2: #fff;
+  --cr3: #000000da;
+  --cr4: #000000a1;
+  --cr5: #beb4b1;
+  --fs1: 34px;
+  --fs2: 24px;
+  --fs3: 20px;
+  --fs4: 16px;
+  --fs5: 14px;
+}
+
+/* the same attribute */
+.cr1 {
+  color: var(--cr1);
+}
+.c2 {
+  color: var(--cr2);
+}
+.cr3 {
+  color: var(--cr3);
+}
+.cr4 {
+  color: var(--cr4);
+}
+.cr5 {
+  color: var(--cr5);
+}
+.fs1 {
+  font-size: 34px;
+}
+.fs2 {
+  font-size: 24px;
+}
+.fs3 {
+  font-size: 20px;
+}
+.fs4 {
+  font-size: 16px;
+}
+.fs5 {
+  font-size: 14px;
+}
+/* end the same attribute */
+/* @font-face {
+  src: url(ProductSansRegular_0.ttf);
+  font-family: product;
+} */
+/* * {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: segoe ui;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+} */
+
+.bg-product {
+  /* SET Height cho nó rồi bảo sao ko lỗi? */
+  /*height: 446px;*/
+  background: #d1d7f5;
+  /* overflow: hidden; */
+}
+#sliderproduct {
+  width: 100%;
+}
+#sliderproduct .carousel-inner {
+  overflow: visible;
+}
+
+#sliderproduct .col-sm-6.image {
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px #959595;
+  position: relative;
+  /* Thêm cái của nợ này vào bảo sao nó ko tràn bờ đê */
+  /*top: -44px;
+  padding: 100px;
+  padding-top: 40px;*/
+}
+.item {
+  padding: 20px 20px 40px 20px;
+}
+
+.col-sm-6.image .item img.img-fluid {
+  /* Ai mướn thêm cái vào làm phá bố cục css của người ta.. mún trang web đẹp thì phải lựa cái ảnh đẹp đẹp vào rồi set cái độ rộng cho nó vừa là được rồi */
+  /*min-width: 100%;*/
+  width: 315px;
+}
+.col-sm-6.image h1 {
+  margin-bottom: 20px;
+}
+
+#sliderproduct .top a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 14px 22px;
+  /* background: #e0794f; */
+  box-sizing: border-box !important;
+  text-align: center;
+  margin: 0px 2px;
+  display: block;
+  color: black;
+  width: 96px;
+}
+
+#sliderproduct .col-sm-4.mr-auto {
+  margin-top: 22px;
+}
+
+#sliderproduct p.cr1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#sliderproduct .col-sm-6:last-child {
+  /* Cần nâng cao thêm kiến thức về sử dụng padding */
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+#sliderproduct .details p.d-inline-block {
+  color: #e0794f;
+}
+
+#sliderproduct .details .fa {
+  color: #e0794f;
+  padding: 0px 3px;
+}
+
+#sliderproduct .rating {
+  margin: 23px 0px;
+}
+
+#sliderproduct .details .btn {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 16px 22px;
+  background: black;
+  color: #fff;
+  border-radius: 81px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+#sliderproduct .details h2 {
+  margin: 25px 0px 30px 0px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#sliderproduct .details p.cr4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 0px;
+}
+#sliderproduct .carousel-item {
+  transition: 0.4s;
+}
+
+#sliderproduct a.carousel-control-prev,
+#sliderproduct a.carousel-control-next {
+  border-radius: 50%;
+  background-color: brown;
+  width: 46px;
+  height: 46px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.bg {
+  height: 570px;
+  overflow: hidden;
+}
+
+#sliderproduct ol.carousel-indicators {
+  display: none;
+}
